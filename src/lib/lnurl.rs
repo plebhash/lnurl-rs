@@ -1,5 +1,5 @@
-use crate::lightning_address::LightningAddress;
-use crate::Error;
+use super::lightning_address::LightningAddress;
+use super::Error;
 use serde::{Deserialize, Deserializer, Serialize};
 use std::fmt::{Display, Formatter};
 use std::str::FromStr;

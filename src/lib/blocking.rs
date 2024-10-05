@@ -7,11 +7,11 @@ use std::time::Duration;
 
 use ureq::{Agent, Proxy};
 
-use crate::channel::ChannelResponse;
-use crate::lnurl::LnUrl;
-use crate::pay::{LnURLPayInvoice, PayResponse};
-use crate::withdraw::WithdrawalResponse;
-use crate::{decode_ln_url_response_from_json, Builder, Error, LnUrlResponse, Response};
+use super::channel::ChannelResponse;
+use super::lnurl::LnUrl;
+use super::pay::{LnURLPayInvoice, PayResponse};
+use super::withdraw::WithdrawalResponse;
+use super::{decode_ln_url_response_from_json, Builder, Error, LnUrlResponse, Response};
 
 #[derive(Debug, Clone)]
 pub struct BlockingClient {

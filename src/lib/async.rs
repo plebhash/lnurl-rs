@@ -5,12 +5,12 @@ use bitcoin::secp256k1::ecdsa::Signature;
 use bitcoin::secp256k1::PublicKey;
 use reqwest::Client;
 
-use crate::api::*;
-use crate::channel::ChannelResponse;
-use crate::lnurl::LnUrl;
-use crate::pay::{LnURLPayInvoice, PayResponse};
-use crate::withdraw::WithdrawalResponse;
-use crate::{Builder, Error};
+use super::api::*;
+use super::channel::ChannelResponse;
+use super::lnurl::LnUrl;
+use super::pay::{LnURLPayInvoice, PayResponse};
+use super::withdraw::WithdrawalResponse;
+use super::{Builder, Error};
 
 #[derive(Debug, Clone)]
 pub struct AsyncClient {

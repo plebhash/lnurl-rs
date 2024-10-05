@@ -1,5 +1,5 @@
-use crate::lnurl::LnUrl;
-use crate::Error;
+use super::lnurl::LnUrl;
+use super::Error;
 use email_address::EmailAddress;
 use serde::{Deserialize, Deserializer, Serialize};
 use std::fmt::{Display, Formatter};
@@ -84,8 +84,8 @@ impl Display for LightningAddress {
 
 #[cfg(test)]
 mod test {
-    use crate::lightning_address::LightningAddress;
-    use crate::lnurl::LnUrl;
+    use super::lightning_address::LightningAddress;
+    use super::lnurl::LnUrl;
     use std::str::FromStr;
 
     #[test]

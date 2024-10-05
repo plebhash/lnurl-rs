@@ -14,7 +14,7 @@ use url::Url;
 type Aes256CbcEnc = Encryptor<Aes256>;
 type Aes256CbcDec = Decryptor<Aes256>;
 
-use crate::Tag;
+use super::Tag;
 
 #[derive(Debug, Clone, PartialEq, Eq, Hash, Serialize, Deserialize)]
 pub struct PayResponse {

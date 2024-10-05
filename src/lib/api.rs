@@ -1,7 +1,8 @@
-use crate::channel::ChannelResponse;
-use crate::pay::PayResponse;
-use crate::withdraw::WithdrawalResponse;
-use crate::Error as LnUrlError;
+use super::channel::ChannelResponse;
+use super::pay::PayResponse;
+use super::withdraw::WithdrawalResponse;
+use super::Error as LnUrlError;
+
 use serde::de::Error;
 use serde::{Deserialize, Serialize};
 use std::fmt::Display;
